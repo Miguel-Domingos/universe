@@ -1,35 +1,19 @@
 <script setup lang="ts">
-import Earth from "@/components/Earth.vue";
-import Mars from "@/components/Mars.vue";
-
 import { TresCanvas, useRenderLoop } from "@tresjs/core";
 import { OrbitControls, Stars } from "@tresjs/cientos";
 import { shallowRef } from "vue";
-import type { PlanetNames } from "@/types";
 
 const StarRotation = shallowRef(0);
 
 useRenderLoop().onLoop(({ delta }) => {
   StarRotation.value += 0.02 * delta;
 });
-
-const props = defineProps<{ planetName: PlanetNames }>();
-
-const PlanetsComponent: Record<PlanetNames, any> = {
-  Mercury: Earth,
-  Venus: Earth,
-  Earth: Earth,
-  Mars: Mars,
-  Jupiter: Earth,
-  Saturn: Earth,
-  Uranus: Earth,
-  Neptune: Earth,
-};
 </script>
 
 <template>
   <div class="relative w-full h-full">
     <TresCanvas
+      v-if="false"
       clear-color="#101010"
       :alpha="true"
       window-size
@@ -45,19 +29,19 @@ const PlanetsComponent: Record<PlanetNames, any> = {
         :size-attenuation="true"
       />
       <TresPerspectiveCamera
-        :position="[1, 2, 5]"
+        :position="[-3, 2, 6]"
         :fov="45"
         :aspect="1"
         :near="0.1"
         :far="1000"
       />
       <Suspense>
-        <component :is="PlanetsComponent[props.planetName]" />
+        <slot />
       </Suspense>
     </TresCanvas>
 
     <div class="absolute w-full h-full overflow-hidden pointer-events-none">
-      <slot />
+      <slot name="content" />
     </div>
   </div>
 </template>

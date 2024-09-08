@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+}
+
 #app {
   height: 100vh;
   width: 100%;
+  background-color: #101010;
 }

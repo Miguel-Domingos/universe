@@ -9,6 +9,8 @@ const planets: Planets = {
     radius: "1,516 miles | 2,440 kilometers",
     planet_type: "Terrestrial",
     moons: 0,
+    back: "neptune",
+    next: "venus",
   },
   venus: {
     name: "Venus",
@@ -19,6 +21,8 @@ const planets: Planets = {
     radius: "3,760 miles | 6,052 kilometers",
     planet_type: "Terrestrial",
     moons: 0,
+    back: "mercury",
+    next: "earth",
   },
   earth: {
     name: "Earth",
@@ -29,6 +33,8 @@ const planets: Planets = {
     radius: "3,959 miles | 6,371 kilometers",
     planet_type: "Terrestrial",
     moons: 1,
+    back: "venus",
+    next: "mars",
   },
   mars: {
     name: "Mars",
@@ -39,6 +45,8 @@ const planets: Planets = {
     radius: "2,106 miles | 3,390 kilometers",
     planet_type: "Terrestrial",
     moons: 2,
+    back: "earth",
+    next: "jupiter",
   },
   jupiter: {
     name: "Jupiter",
@@ -49,6 +57,8 @@ const planets: Planets = {
     radius: "43,441 miles | 69,911 kilometers",
     planet_type: "Gas Giant",
     moons: 79,
+    back: "mars",
+    next: "saturn",
   },
   saturn: {
     name: "Saturn",
@@ -59,6 +69,8 @@ const planets: Planets = {
     radius: "36,184 miles | 58,232 kilometers",
     planet_type: "Gas Giant",
     moons: 83,
+    back: "jupiter",
+    next: "uranus",
   },
   uranus: {
     name: "Uranus",
@@ -69,6 +81,8 @@ const planets: Planets = {
     radius: "15,759 miles | 25,362 kilometers",
     planet_type: "Ice Giant",
     moons: 27,
+    back: "saturn",
+    next: "neptune",
   },
   neptune: {
     name: "Neptune",
@@ -79,6 +93,8 @@ const planets: Planets = {
     radius: "15,299 miles | 24,622 kilometers",
     planet_type: "Ice Giant",
     moons: 14,
+    back: "uranus",
+    next: "mercury",
   },
 };
 

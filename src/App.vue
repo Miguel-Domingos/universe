@@ -1,5 +1,17 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
+import { RouterView, useRouter } from "vue-router";
+
+useRouter().beforeResolve((to, from, next) => {
+  // @ts-ignore
+  if (!document.startViewTransition) return;
+  return new Promise((resolve) => {
+    // @ts-ignore
+    document.startViewTransition(async () => {
+      resolve();
+      await next();
+    });
+  });
+});
 </script>
 
 <template>

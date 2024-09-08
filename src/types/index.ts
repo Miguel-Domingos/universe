@@ -6,7 +6,8 @@ export type PlanetNames =
   | "Jupiter"
   | "Saturn"
   | "Uranus"
-  | "Neptune";
+  | "Neptune"
+  | "None";
 
 export type Planet = {
   name: PlanetNames;
@@ -16,6 +17,8 @@ export type Planet = {
   radius: string;
   planet_type: "Terrestrial" | "Gas Giant" | "Ice Giant";
   moons: number;
+  next?: string;
+  back?: string;
 };
 
 export type Planets = {
