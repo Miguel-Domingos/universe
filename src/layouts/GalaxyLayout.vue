@@ -13,7 +13,6 @@ useRenderLoop().onLoop(({ delta }) => {
 <template>
   <div class="relative w-full h-full">
     <TresCanvas
-      v-if="false"
       clear-color="#101010"
       :alpha="true"
       window-size
