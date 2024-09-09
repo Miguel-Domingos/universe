@@ -32,7 +32,7 @@ import GalaxyLayout from "@/layouts/GalaxyLayout.vue";
       </div>
 
       <div
-        class="absolute transition pointer-events-auto bottom-4 right-4 opacity-70 hover:opacity-100"
+        class="absolute z-10 transition pointer-events-auto bottom-4 right-4"
       >
         <RouterLink to="/earth">
           <button class="px-4 py-2 text-xl text-white rounded bg-slate-800">

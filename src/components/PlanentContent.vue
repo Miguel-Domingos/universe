@@ -6,7 +6,7 @@ const props = defineProps<{ content: Planet }>();
 </script>
 
 <template>
-  <div v-if="props" class="relative flex items-center w-full h-full">
+  <div v-if="props" class="z-10 relative flex items-center w-full h-full">
     <div
       class="absolute transition pointer-events-auto top-4 left-4 opacity-70 hover:opacity-100"
     >
@@ -17,9 +17,7 @@ const props = defineProps<{ content: Planet }>();
       </RouterLink>
     </div>
 
-    <div
-      class="absolute transition pointer-events-auto top-4 right-4 opacity-70 hover:opacity-100"
-    >
+    <div class="absolute transition pointer-events-auto top-4 right-4">
       <a href="https://github.com/Miguel-Domingos/universe" target="_blank">
         <button
           class="px-2 py-2 text-xs text-white rounded outline-none bg-slate-800"
