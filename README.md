@@ -1,18 +1,6 @@
-# UNIVERSE
+# UNIVERSE - 3D planets
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This study project was created to practice 3D render using [tresjs](https://tresjs.org/)
 
 ## Project Setup
 
@@ -31,3 +19,19 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
+
+# Important None
+
+1 - **this website contain feactures that does not work in some browser**
+
+- view-transition: this feacture is not Baseline (stable) because it does not work in some of the most widely-used browsers, such as safari and firefox
+
+2 - **Black screen**
+
+- **Unfortunately. For some reason that I don't know, some devices, such as old and some new cell phones, are unable to render the content. If you see a black screen for a long time, it means your devices still can't render and maybe I'm trying to solve it.**
