@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SaturnMap from "@/assets/textures/Saturn/8k_saturn.jpg";
+import SaturnMap from "@/assets/textures/Saturn/2k_saturn.jpg";
 
 import { ref } from "vue";
 

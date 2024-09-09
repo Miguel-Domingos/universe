@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import JupiterMap from "@/assets/textures/Jupiter/8k_jupiter.jpg";
+import JupiterMap from "@/assets/textures/Jupiter/2k_jupiter.jpg";
 import { ref } from "vue";
 import { useTexture, useRenderLoop } from "@tresjs/core";
 import type { Mesh } from "three";

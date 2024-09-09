@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import VenusMap from "@/assets/textures/Venus/8k_venus_surface.jpg";
-import CloudMap from "@/assets/textures/Venus/4k_venus_atmosphere.jpg";
+import VenusMap from "@/assets/textures/Venus/2k_venus_surface.jpg";
+import CloudMap from "@/assets/textures/Venus/2k_venus_atmosphere.jpg";
 import { ref } from "vue";
 import type { Mesh } from "three";
 

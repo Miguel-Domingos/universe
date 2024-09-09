@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MarsMap from "@/assets/textures/Mars/8k_mars.jpg";
+import MarsMap from "@/assets/textures/Mars/2k_mars.jpg";
 
 import { ref } from "vue";
 

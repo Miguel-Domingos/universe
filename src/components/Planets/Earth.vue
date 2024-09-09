@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import EarthMap from "@/assets/textures/Earth/00_earthmap1k.jpg";
+import EarthMap from "@/assets/textures/Earth/2k_earth_daymap.jpg";
 import EarthDisplacementMap from "@/assets/textures/Earth/01_earthbump1k.jpg";
 import EarthNormalMap from "@/assets/textures/Earth/02_earthspec1k.jpg";
-import CloudMap from "@/assets/textures/Earth/8k_earth_clouds.jpg";
+import CloudMap from "@/assets/textures/Earth/2k_earth_clouds.jpg";
 import { ref } from "vue";
 import type { Mesh } from "three";
 

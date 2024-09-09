@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MercuryMap from "@/assets/textures/Mercury/8k_mercury.jpg";
+import MercuryMap from "@/assets/textures/Mercury/2k_mercury.jpg";
 
 import { ref } from "vue";
 
